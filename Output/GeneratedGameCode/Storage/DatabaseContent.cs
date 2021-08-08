@@ -46,7 +46,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate AmmunitionObsolete ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate AmmunitionObsolete ID - " + item.Id + " (" + name + " | " + _ammunitionObsoleteMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Component)
             {
@@ -59,7 +59,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Component ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Component ID - " + item.Id + " (" + name + " | " + _componentMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.ComponentMod)
             {
@@ -72,7 +72,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate ComponentMod ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate ComponentMod ID - " + item.Id + " (" + name + " | " + _componentModMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.ComponentStats)
             {
@@ -85,7 +85,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate ComponentStats ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate ComponentStats ID - " + item.Id + " (" + name + " | " + _componentStatsMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Device)
             {
@@ -98,7 +98,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Device ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Device ID - " + item.Id + " (" + name + " | " + _deviceMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.DroneBay)
             {
@@ -111,7 +111,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate DroneBay ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate DroneBay ID - " + item.Id + " (" + name + " | " + _droneBayMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Faction)
             {
@@ -124,7 +124,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Faction ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Faction ID - " + item.Id + " (" + name + " | " + _factionMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Satellite)
             {
@@ -137,7 +137,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Satellite ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Satellite ID - " + item.Id + " (" + name + " | " + _satelliteMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.SatelliteBuild)
             {
@@ -150,7 +150,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate SatelliteBuild ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate SatelliteBuild ID - " + item.Id + " (" + name + " | " + _satelliteBuildMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Ship)
             {
@@ -163,7 +163,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Ship ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Ship ID - " + item.Id + " (" + name + " | " + _shipMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.ShipBuild)
             {
@@ -176,7 +176,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate ShipBuild ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate ShipBuild ID - " + item.Id + " (" + name + " | " + _shipBuildMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Skill)
             {
@@ -189,7 +189,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Skill ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Skill ID - " + item.Id + " (" + name + " | " + _skillMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Technology)
             {
@@ -202,7 +202,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Technology ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Technology ID - " + item.Id + " (" + name + " | " + _technologyMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Character)
             {
@@ -215,7 +215,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Character ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Character ID - " + item.Id + " (" + name + " | " + _characterMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Fleet)
             {
@@ -228,7 +228,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Fleet ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Fleet ID - " + item.Id + " (" + name + " | " + _fleetMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Loot)
             {
@@ -241,7 +241,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Loot ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Loot ID - " + item.Id + " (" + name + " | " + _lootMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Quest)
             {
@@ -254,7 +254,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Quest ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Quest ID - " + item.Id + " (" + name + " | " + _questMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.QuestItem)
             {
@@ -267,7 +267,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate QuestItem ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate QuestItem ID - " + item.Id + " (" + name + " | " + _questItemMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Ammunition)
             {
@@ -280,7 +280,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Ammunition ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Ammunition ID - " + item.Id + " (" + name + " | " + _ammunitionMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.BulletPrefab)
             {
@@ -293,7 +293,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate BulletPrefab ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate BulletPrefab ID - " + item.Id + " (" + name + " | " + _bulletPrefabMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.VisualEffect)
             {
@@ -306,7 +306,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate VisualEffect ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate VisualEffect ID - " + item.Id + " (" + name + " | " + _visualEffectMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.Weapon)
             {
@@ -319,7 +319,7 @@ namespace GameDatabase.Storage
                 }
 
                 if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate Weapon ID - " + item.Id + " (" + name + ")");
+                    throw new DatabaseException("Duplicate Weapon ID - " + item.Id + " (" + name + " | " + _weaponMap[item.Id].FileName + ")");
             }
             else if (type == ItemType.DatabaseSettings)
             {
@@ -332,7 +332,7 @@ namespace GameDatabase.Storage
                 }
 
 				if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate DatabaseSettings file found - " + name);
+                    throw new DatabaseException("Duplicate DatabaseSettings file found - " + name + " | " + DatabaseSettings.FileName);
             }
             else if (type == ItemType.ExplorationSettings)
             {
@@ -345,7 +345,7 @@ namespace GameDatabase.Storage
                 }
 
 				if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate ExplorationSettings file found - " + name);
+                    throw new DatabaseException("Duplicate ExplorationSettings file found - " + name + " | " + ExplorationSettings.FileName);
             }
             else if (type == ItemType.GalaxySettings)
             {
@@ -358,7 +358,7 @@ namespace GameDatabase.Storage
                 }
 
 				if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate GalaxySettings file found - " + name);
+                    throw new DatabaseException("Duplicate GalaxySettings file found - " + name + " | " + GalaxySettings.FileName);
             }
             else if (type == ItemType.ShipSettings)
             {
@@ -371,7 +371,7 @@ namespace GameDatabase.Storage
                 }
 
 				if (!_allowDuplicates)
-                    throw new DatabaseException("Duplicate ShipSettings file found - " + name);
+                    throw new DatabaseException("Duplicate ShipSettings file found - " + name + " | " + ShipSettings.FileName);
             }
             else
             {

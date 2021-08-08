@@ -6,7 +6,7 @@
     <member name="Message" type="string" case="ShowDialog,Switch,Condition,Random" />
     <member name="DefaultTransition" type="int" case="Switch,Random" minvalue="0" maxvalue="999999" />
     <member name="DefaultTransition" type="int" case="Retreat DestroyOccupants SuppressOccupants ReceiveItem RemoveItem Trade StartQuest 
-    ChangeFactionRelations SetFactionRelations ChangeCharacterRelations SetCharacterRelations OpenShipyard CaptureStarBase LiberateStarBase ChangeFaction" minvalue="1" maxvalue="999999" alias="Transition" />
+    ChangeFactionRelations SetFactionRelations ChangeCharacterRelations SetCharacterRelations OpenShipyard CaptureStarBase LiberateStarBase ChangeFaction" minvalue="1" maxvalue="1000" alias="Transition" />
     <member name="DefaultTransition" type="int" case="AttackFleet,AttackOccupants" alias="VictoryTransition" minvalue="1" maxvalue="999999" />
     <member name="FailureTransition" type="int" case="AttackFleet,AttackOccupants" minvalue="1" maxvalue="999999" />
     <member name="Enemy" type="object" typeid="Fleet" case="ShowDialog,AttackFleet" />

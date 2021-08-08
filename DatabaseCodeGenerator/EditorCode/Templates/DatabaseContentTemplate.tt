@@ -53,7 +53,7 @@ namespace <#= Utils.RootNamespace #>.<#= Utils.StorageNamespace #>
 #>
             <#= first ? "if" : "else if" #> (type == <#= Constants.ItemTypeEnum + "." + item.name #>)
             {
-			    if (<#= DataMember(item.name) #>.ContainsKey(item.Id)) throw new DatabaseException("Duplicate <#= item.name #> ID - " + item.Id + " (" + name + ")");
+			    if (<#= DataMember(item.name) #>.ContainsKey(item.Id)) throw new DatabaseException("Duplicate <#= item.name #> ID - " + item.Id + " (" + name + " | " + <#= DataMember(item.name) #>[item.Id].FileName + ")");
                 var data = _serializer.FromJson<<#= Utils.SerializableClassName(item.name) #>>(content);
                 data.FileName = name;
                 <#= DataMember(item.name) #>.Add(data.Id, data);
@@ -71,7 +71,7 @@ namespace <#= Utils.RootNamespace #>.<#= Utils.StorageNamespace #>
                 data.FileName = name;
 
 				if (<#= item.name #> != null)
-                    throw new DatabaseException("Duplicate <#= item.name #> file found - " + name);
+                    throw new DatabaseException("Duplicate <#= item.name #> file found - " + name + " | " + <#= item.name #>.FileName);
                 <#= item.name #> = data;
             }
 <#
