@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Ammunition" type="object" typeid="Ammunition" >
-    <member name="Body" type="struct" typeid="BulletBody" />
-    <member name="Triggers" type="struct_list" typeid="BulletTrigger" />
-    <member name="ImpactType" type="enum" typeid="BulletImpactType" />
-    <member name="Effects" type="struct_list" typeid="ImpactEffect" />
+<data name="Ammunition" type="object" typeid="弹头" >
+    <member name="Body" type="struct" typeid="BulletBody" alias="弹体" />
+    <member name="Triggers" type="struct_list" typeid="BulletTrigger" alias="触发器" />
+    <member name="ImpactType" type="enum" typeid="BulletImpactType" alias="击中方式" />
+    <member name="Effects" type="struct_list" typeid="ImpactEffect" alias="击中效果" />
 </data>

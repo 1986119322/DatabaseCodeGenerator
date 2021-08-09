@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="BulletType">
-    <item name="Projectile" />
-    <item name="Homing" />
-    <item name="Static" />
-    <item name="Continuous" />
+    <item name="抛射物" />
+    <item name="跟踪弹" />
+    <item name="静止发射" />
+    <item name="持续发射" />
 </data>

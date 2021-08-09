@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="TechType">
-    <item name="Component" />
-    <item name="Ship" />
-    <item name="Satellite" />
+    <item name="组件" />
+    <item name="飞船" />
+    <item name="僚机" />
 </data>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="LootItemType">
-    <item name="None">0</item>
-    <item name="SomeMoney">1</item>
-    <item name="Fuel">2</item>
-    <item name="Money">3</item>
-    <item name="Stars">4</item>
+    <item name="无">0</item>
+    <item name="一些钱">1</item>
+    <item name="燃料">2</item>
+    <item name="钱">3</item>
+    <item name="星币">4</item>
     
-    <item name="StarMap">5</item>
-    <item name="RandomComponents">10</item>
+    <item name="星图">5</item>
+    <item name="随机组件">10</item>
     
-    <item name="RandomItems">20</item>
-    <item name="AllItems">21</item>
-    <item name="ItemsWithChance">22</item>
+    <item name="随机物品">20</item>
+    <item name="所有物品">21</item>
+    <item name="几率物品">22</item>
 
-    <item name="QuestItem">25</item>
+    <item name="任务物品">25</item>
 
-    <item name="Ship">30</item>
-    <item name="EmptyShip">31</item>
+    <item name="带配置飞船">30</item>
+    <item name="空船">31</item>
 
-    <item name="Component">35</item>
+    <item name="组件">35</item>
 </data>

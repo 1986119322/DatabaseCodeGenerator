@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Requirement" type="struct" switch="Type" >
-    <member name="Type" type="enum" typeid="RequirementType" />
-    <member name="ItemId" type="object" case="HaveItemById" typeid="Loot" alias="Loot" />
-    <member name="ItemId" type="object" case="HaveQuestItem" typeid="QuestItem" alias="QuestItem" />
-    <member name="ItemId" type="object" case="QuestCompleted,QuestActive" typeid="Quest" alias="Quest" />
-    <member name="MinValue" type="int" case="PlayerPosition,RandomStarSystem" minvalue="0" maxvalue="10000" />
-    <member name="MaxValue" type="int" case="PlayerPosition,RandomStarSystem" minvalue="0" maxvalue="10000" />
-    <member name="MinValue" type="int" case="CharacterRelations,FactionRelations" minvalue="-100" maxvalue="100" />
-    <member name="MaxValue" type="int" case="CharacterRelations,FactionRelations" minvalue="-100" maxvalue="100" />
-    <member name="MinValue" type="int" case="HaveQuestItem" minvalue="1" maxvalue="1000000" alias="Amount" />
-    <member name="MinValue" type="int" case="TimeSinceQuestStart,TimeSinceLastCompletion" minvalue="0" maxvalue="999999" alias="Minutes" />
-    <member name="MaxValue" type="int" case="TimeSinceQuestStart,TimeSinceLastCompletion" minvalue="0" maxvalue="999999" alias="Hours" />
-    <member name="Character" type="object" typeid="Character" case="CharacterRelations" />
-    <member name="Faction" type="object" typeid="Faction" case="Faction" />
-    <member name="Loot" type="struct" typeid="LootContent" case="HaveItem" />
-    <member name="Requirements" type="struct_list" typeid="Requirement" case="All,Any,None" />
+<data name="Requirement" type="struct" switch="Type" alias="条件">
+    <member name="Type" type="enum" typeid="RequirementType" alias="类型" />
+    <member name="ItemId" type="object" case="拥有指定物品" typeid="Loot" alias="物品列表" />
+    <member name="ItemId" type="object" case="拥有任务物品" typeid="QuestItem" alias="任务物品" />
+    <member name="ItemId" type="object" case="任务已完成,任务激活中" typeid="Quest" alias="任务" />
+    <member name="MinValue" type="int" case="玩家位置,移动到任意星系" minvalue="0" maxvalue="10000" alias="最小距离" />
+    <member name="MaxValue" type="int" case="玩家位置,移动到任意星系" minvalue="0" maxvalue="10000" alias="最大距离" />
+    <member name="MinValue" type="int" case="角色好感,星区声望" minvalue="-100" maxvalue="100" alias="最小好感度" />
+    <member name="MaxValue" type="int" case="角色好感,星区声望" minvalue="-100" maxvalue="100" alias="最大好感度" />
+    <member name="MinValue" type="int" case="拥有任务物品" minvalue="1" maxvalue="1000000" alias="拥有数量" />
+    <member name="MinValue" type="int" case="从任务触发开始进行计时,从任务上次完成时开始计时" minvalue="0" maxvalue="999999" alias="分钟" />
+    <member name="MaxValue" type="int" case="从任务触发开始进行计时,从任务上次完成时开始计时" minvalue="0" maxvalue="999999" alias="小时" />
+    <member name="Character" type="object" typeid="Character" case="角色好感" alias="角色" />
+    <member name="势力" type="object" typeid="Faction" case="势力" alias="势力" />
+    <member name="Loot" type="struct" typeid="LootContent" case="拥有物品" alias="物品列表" />
+    <member name="Requirements" type="struct_list" typeid="Requirement" case="所有,任意,无一" alias="条件" />
 </data>

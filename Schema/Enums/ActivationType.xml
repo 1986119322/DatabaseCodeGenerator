@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="ActivationType">
-    <item name="None" />
-    <item name="Manual" />
-    <item name="Mixed" />
+    <item name="自动" />
+    <item name="手动" />
+    <item name="混合" />
 </data>

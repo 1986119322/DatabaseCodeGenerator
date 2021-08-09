@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data name="ImpactEffect" type="struct" >
-    <member name="Type" type="enum" typeid="ImpactEffectType" />
-    <member name="DamageType" type="enum" typeid="DamageType" />
-    <member name="Power" type="float" minvalue="0" maxvalue="999999999"/>
-    <member name="Factor" type="float" minvalue="0" maxvalue="1" />
+    <member name="Type" type="enum" typeid="ImpactEffectType" alias="类型" />
+    <member name="DamageType" type="enum" typeid="DamageType" alias="伤害类型" />
+    <member name="Power" type="float" minvalue="0" maxvalue="999999999" alias="效果强度" />
+    <member name="Factor" type="float" minvalue="0" maxvalue="1" alias="强度系数" />
 </data>

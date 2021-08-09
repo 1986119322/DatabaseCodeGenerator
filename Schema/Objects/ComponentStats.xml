@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="ComponentStats" type="object" typeid="ComponentStats" >
-    <member name="Type" type="enum" typeid="ComponentStatsType" />
+<data name="ComponentStats" type="object" typeid="组件属性" >
+    <member name="Type" type="enum" typeid="ComponentStatsType" alias="属性计算方式" />
     
-    <member name="ArmorPoints" type="float" minvalue="-1000000" maxvalue="1000000" />
-    <member name="ArmorRepairRate" type="float" minvalue="-1000000" maxvalue="1000000" />
-    <member name="ArmorRepairCooldownModifier" type="float" minvalue="-1" maxvalue="1" />
+    <member name="ArmorPoints" type="float" minvalue="-1000000" maxvalue="1000000" alias="装甲值" />
+    <member name="ArmorRepairRate" type="float" minvalue="-1000000" maxvalue="1000000" alias="装甲修复速率" />
+    <member name="ArmorRepairCooldownModifier" type="float" minvalue="-1" maxvalue="1" alias="装甲修复间隔倍率" />
 
-    <member name="EnergyPoints" type="float" minvalue="-1000000" maxvalue="1000000" />
-    <member name="EnergyRechargeRate" type="float" minvalue="-1000000" maxvalue="1000000" />
-    <member name="EnergyRechargeCooldownModifier" type="float" minvalue="-5" maxvalue="5" />
+    <member name="EnergyPoints" type="float" minvalue="-1000000" maxvalue="1000000" alias="能量值" />
+    <member name="EnergyRechargeRate" type="float" minvalue="-1000000" maxvalue="1000000" alias="能量回充" />
+    <member name="EnergyRechargeCooldownModifier" type="float" minvalue="-5" maxvalue="5" alias="能量回充间隔倍率" />
     
-    <member name="ShieldPoints" type="float" minvalue="-1000000" maxvalue="1000000" />
-    <member name="ShieldRechargeRate" type="float" minvalue="-1000000" maxvalue="1000000" />
-    <member name="ShieldRechargeCooldownModifier" type="float" minvalue="-5" maxvalue="5" />
+    <member name="ShieldPoints" type="float" minvalue="-1000000" maxvalue="1000000" alias="护盾值" />
+    <member name="ShieldRechargeRate" type="float" minvalue="-1000000" maxvalue="1000000" alias="护盾充能速率" />
+    <member name="ShieldRechargeCooldownModifier" type="float" minvalue="-5" maxvalue="5" alias="护盾充能间隔倍率" />
 
-    <member name="Weight" type="float" minvalue="-1000000" maxvalue="1000000" />
+    <member name="Weight" type="float" minvalue="-1000000" maxvalue="1000000" alias="重量" />
 
-    <member name="RammingDamage" type="float" minvalue="-1000000" maxvalue="1000000" />
-    <member name="EnergyAbsorption" type="float" minvalue="-1000000" maxvalue="1000000" />
+    <member name="RammingDamage" type="float" minvalue="-1000000" maxvalue="1000000" alias="撞击伤害" />
+    <member name="EnergyAbsorption" type="float" minvalue="-1000000" maxvalue="1000000" alias="能量吸收" />
 
-    <member name="KineticResistance" type="float" minvalue="-1000000" maxvalue="1000000" />
-    <member name="EnergyResistance" type="float" minvalue="-1000000" maxvalue="1000000" />
-    <member name="ThermalResistance" type="float" minvalue="-1000000" maxvalue="1000000" />
+    <member name="KineticResistance" type="float" minvalue="-1000000" maxvalue="1000000" alias="动能抗性" />
+    <member name="EnergyResistance" type="float" minvalue="-1000000" maxvalue="1000000" alias="能量抗性" />
+    <member name="ThermalResistance" type="float" minvalue="-1000000" maxvalue="1000000" alias="热能抗性" />
 
-    <member name="EnginePower" type="float" minvalue="0" maxvalue="2000" />
-    <member name="TurnRate" type="float" minvalue="0" maxvalue="2000" />
+    <member name="EnginePower" type="float" minvalue="0" maxvalue="2000" alias="引擎推力" />
+    <member name="TurnRate" type="float" minvalue="0" maxvalue="2000" alias="引擎扭矩" />
 
-    <member name="Autopilot" type="bool" />
+    <member name="Autopilot" type="bool" alias="自动驾驶" />
 
-    <member name="DroneRangeModifier" type="float" minvalue="-50" maxvalue="50" />
-    <member name="DroneDamageModifier" type="float" minvalue="-50" maxvalue="50" />
-    <member name="DroneDefenseModifier" type="float" minvalue="-50" maxvalue="50" />
-    <member name="DroneSpeedModifier" type="float" minvalue="-50" maxvalue="50" />
-    <member name="DronesBuiltPerSecond" type="float" minvalue="0" maxvalue="100" />
-    <member name="DroneBuildTimeModifier" type="float" minvalue="0" maxvalue="100" />
+    <member name="DroneRangeModifier" type="float" minvalue="-50" maxvalue="50" alias="无人机索敌范围增幅" />
+    <member name="DroneDamageModifier" type="float" minvalue="-50" maxvalue="50" alias="无人机伤害增幅" />
+    <member name="DroneDefenseModifier" type="float" minvalue="-50" maxvalue="50" alias="无人机防御增幅" />
+    <member name="DroneSpeedModifier" type="float" minvalue="-50" maxvalue="50" alias="无人机速度增幅" />
+    <member name="DronesBuiltPerSecond" type="float" minvalue="0" maxvalue="100" alias="无人机每秒建造数" />
+    <member name="DroneBuildTimeModifier" type="float" minvalue="0" maxvalue="100" alias="无人机建造时间增幅" />
 
-    <member name="WeaponFireRateModifier" type="float" minvalue="-100" maxvalue="100" />
-    <member name="WeaponDamageModifier" type="float" minvalue="-100" maxvalue="100" />
-    <member name="WeaponRangeModifier" type="float" minvalue="-100" maxvalue="100" />
-    <member name="WeaponEnergyCostModifier" type="float" minvalue="-100" maxvalue="100" />
+    <member name="WeaponFireRateModifier" type="float" minvalue="-100" maxvalue="100" alias="武器射速增幅" />
+    <member name="WeaponDamageModifier" type="float" minvalue="-100" maxvalue="100" alias="武器伤害增幅" />
+    <member name="WeaponRangeModifier" type="float" minvalue="-100" maxvalue="100" alias="武器射程增幅" />
+    <member name="WeaponEnergyCostModifier" type="float" minvalue="-100" maxvalue="100" alias="武器能耗增幅" />
 
-    <member name="AlterWeaponPlatform" type="enum" typeid="PlatformType" />
+    <member name="AlterWeaponPlatform" type="enum" typeid="PlatformType" alias="更改炮管类型" />
 </data>

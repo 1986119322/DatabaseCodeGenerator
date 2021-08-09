@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="BulletImpactType">
-    <item name="HitFirstTarget" />
-    <item name="HitAllTargets" />
-    <item name="DamageOverTime" />
+    <item name="击中首个目标" />
+    <item name="击中后穿透目标" />
+    <item name="持续影响目标" />
 </data>

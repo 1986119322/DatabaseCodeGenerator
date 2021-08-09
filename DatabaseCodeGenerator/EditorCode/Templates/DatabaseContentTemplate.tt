@@ -51,9 +51,9 @@ namespace <#= Utils.RootNamespace #>.<#= Utils.StorageNamespace #>
 			foreach (var item in Schema.Objects)
             {
 #>
-            <#= first ? "if" : "else if" #> (type == <#= Constants.ItemTypeEnum + "." + item.name #>)
+            <#= first ? "if" : "else if" #> (type == <#= Constants.ItemTypeEnum + "." + item.typeid #>)
             {
-			    if (<#= DataMember(item.name) #>.ContainsKey(item.Id)) throw new DatabaseException("Duplicate <#= item.name #> ID - " + item.Id + " (" + name + " | " + <#= DataMember(item.name) #>[item.Id].FileName + ")");
+			    if (<#= DataMember(item.name) #>.ContainsKey(item.Id)) throw new DatabaseException("重复的<#= item.typeid #>ID - " + item.Id + " (" + name + " | " + <#= DataMember(item.name) #>[item.Id].FileName + ")");
                 var data = _serializer.FromJson<<#= Utils.SerializableClassName(item.name) #>>(content);
                 data.FileName = name;
                 <#= DataMember(item.name) #>.Add(data.Id, data);
@@ -65,13 +65,13 @@ namespace <#= Utils.RootNamespace #>.<#= Utils.StorageNamespace #>
 			foreach (var item in Schema.Configurations)
             {
 #>
-            <#= first ? "if" : "else if" #> (type == <#= Constants.ItemTypeEnum + "." + item.name #>)
+            <#= first ? "if" : "else if" #> (type == <#= Constants.ItemTypeEnum + "." + item.typeid #>)
             {
                 var data = _serializer.FromJson<<#= Utils.SerializableClassName(item.name) #>>(content);
                 data.FileName = name;
 
 				if (<#= item.name #> != null)
-                    throw new DatabaseException("Duplicate <#= item.name #> file found - " + name + " | " + <#= item.name #>.FileName);
+                    throw new DatabaseException("发现重复的<#= item.typeid #>文件 - " + name + " | " + <#= item.name #>.FileName);
                 <#= item.name #> = data;
             }
 <#
@@ -82,7 +82,7 @@ namespace <#= Utils.RootNamespace #>.<#= Utils.StorageNamespace #>
 #>
             else
             {
-                throw new DatabaseException("Unknown file type - " + type + "(" + name + ")");
+                throw new DatabaseException("未知的文件类型 - " + type + "(" + name + ")");
             }
 <#
 			}

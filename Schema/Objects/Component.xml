@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Component" type="object" typeid="Component" >
-    <member name="Name" type="string" />
-    <member name="Description" type="string" />
-    <member name="DisplayCategory" type="enum" typeid="ComponentCategory" />
-    <member name="Availability" type="enum" typeid="Availability" />
-    <member name="ComponentStatsId" type="object" typeid="ComponentStats" alias="Stats" options="notnull" />
-    <member name="Faction" type="object" typeid="Faction" />
-    <member name="Level" type="int" minvalue="0" maxvalue="1000" />
-    <member name="Icon" type="image" typeid="Component" />
-    <member name="Color" type="color" />
-    <member name="Layout" type="layout" />
-    <member name="CellType" type="string" options="obsolete" />
-    <member name="DeviceId" type="object" typeid="Device" alias="Device" />
-    <member name="WeaponId" type="object" typeid="Weapon" alias="Weapon" />
-    <member name="AmmunitionId" type="object" typeid="Ammunition" alias="Ammunition" />
-    <member name="AmmunitionId" type="object" typeid="AmmunitionObsolete" alias="AmmunitionObsolete" />
-    <member name="WeaponSlotType" type="string" options="obsolete" />
-    <member name="DroneBayId" type="object" typeid="DroneBay" alias="DroneBay" />
-    <member name="DroneId" type="object" typeid="ShipBuild" alias="Drone" />
-    <member name="Restrictions" type="struct" typeid="ComponentRestrictions" />
-    <member name="PossibleModifications" type="object_list" typeid="ComponentMod" />
+<data name="Component" type="object" typeid="组件" >
+    <member name="Name" type="string" alias="名称" />
+    <member name="Description" type="string" alias="描述" />
+    <member name="DisplayCategory" type="enum" typeid="ComponentCategory" alias="显示类别" />
+    <member name="Availability" type="enum" typeid="Availability" alias="可获得性" />
+    <member name="ComponentStatsId" type="object" typeid="ComponentStats" alias="基础属性" options="notnull" />
+    <member name="Faction" type="object" typeid="Faction" alias="所属势力" />
+    <member name="Level" type="int" minvalue="0" maxvalue="1000" alias="等级" />
+    <member name="Icon" type="image" typeid="Component" alias="图标" />
+    <member name="Color" type="color" alias="颜色" />
+    <member name="Layout" type="layout" alias="占格布局" />
+    <member name="CellType" type="string" options="obsolete" alias="占格类型" />
+    <member name="DeviceId" type="object" typeid="Device" alias="设备" />
+    <member name="WeaponId" type="object" typeid="Weapon" alias="武器" />
+    <member name="AmmunitionId" type="object" typeid="Ammunition" alias="弹头" />
+    <member name="AmmunitionId" type="object" typeid="AmmunitionObsolete" alias="旧弹头" />
+    <member name="WeaponSlotType" type="string" options="obsolete" alias="占用红格类型" />
+    <member name="DroneBayId" type="object" typeid="DroneBay" alias="无人机坪" />
+    <member name="DroneId" type="object" typeid="ShipBuild" alias="无人机配置" />
+    <member name="Restrictions" type="struct" typeid="ComponentRestrictions" alias="安装限制" />
+    <member name="PossibleModifications" type="object_list" typeid="ComponentMod" alias="可用附加" />
 </data>

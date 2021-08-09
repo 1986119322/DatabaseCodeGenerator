@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="VisualEffectType">
-    <item name="Flash" />
-    <item name="FlashAdditive" />
-    <item name="Shockwave" />
-    <item name="Smoke" />
-    <item name="SmokeAdditive" />
-    <item name="Shake" />
+    <item name="闪烁" />
+    <item name="叠加闪烁" />
+    <item name="冲击波" />
+    <item name="烟雾" />
+    <item name="叠加烟雾" />
+    <item name="屏幕震动" />
 </data>

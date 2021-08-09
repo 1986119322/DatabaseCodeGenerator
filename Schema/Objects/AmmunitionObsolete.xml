@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="AmmunitionObsolete" type="object" typeid="AmmunitionObsolete" options="legacy" >
-    <member name="AmmunitionClass" type="enum" typeid="AmmunitionClassObsolete" />
-    <member name="DamageType" type="enum" typeid="DamageType" />
-    <member name="Impulse" type="float" minvalue="0" maxvalue="10" />
-    <member name="Recoil" type="float" minvalue="0" maxvalue="10" />
-    <member name="Size" type="float" minvalue="0" maxvalue="1000" />
-    <member name="InitialPosition" type="vector" />
-    <member name="AreaOfEffect" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Damage" type="float" minvalue="0" maxvalue="999999999" />
-    <member name="Range" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Velocity" type="float" minvalue="0" maxvalue="1000" />
-    <member name="LifeTime" type="float" minvalue="0" maxvalue="999999999" />
-    <member name="HitPoints" type="int" minvalue="0" maxvalue="999999999" />
-    <member name="IgnoresShipVelocity" type="bool" />
-    <member name="EnergyCost" type="float" minvalue="0" maxvalue="999999999" />
-    <member name="CoupledAmmunitionId" type="object" typeid="AmmunitionObsolete" alias="CoupledAmmunition" />
-    <member name="Color" type="color" />
-    <member name="FireSound" type="audioclip" />
-    <member name="HitSound" type="audioclip" />
-    <member name="HitEffectPrefab" type="prefab" typeid="Effect" />
-    <member name="BulletPrefab" type="prefab" typeid="Bullet" />
+<data name="AmmunitionObsolete" type="object" typeid="旧弹头" options="legacy" >
+    <member name="AmmunitionClass" type="enum" typeid="AmmunitionClassObsolete" alias="类型" />
+    <member name="DamageType" type="enum" typeid="DamageType" alias="伤害类型" />
+    <member name="Impulse" type="float" minvalue="0" maxvalue="10" alias="冲击力" />
+    <member name="Recoil" type="float" minvalue="0" maxvalue="10" alias="后坐力" />
+    <member name="Size" type="float" minvalue="0" maxvalue="1000" alias="大小" />
+    <member name="InitialPosition" type="vector" alias="发射偏移距离" />
+    <member name="AreaOfEffect" type="float" minvalue="0" maxvalue="1000" alias="影响范围" />
+    <member name="Damage" type="float" minvalue="0" maxvalue="999999999" alias="伤害" />
+    <member name="Range" type="float" minvalue="0" maxvalue="1000" alias="射程" />
+    <member name="Velocity" type="float" minvalue="0" maxvalue="1000" alias="初速" />
+    <member name="LifeTime" type="float" minvalue="0" maxvalue="999999999" alias="存在时间" />
+    <member name="HitPoints" type="int" minvalue="0" maxvalue="999999999" alias="生命值" />
+    <member name="IgnoresShipVelocity" type="bool" alias="忽略发射速度" />
+    <member name="EnergyCost" type="float" minvalue="0" maxvalue="999999999" alias="能耗" />
+    <member name="CoupledAmmunitionId" type="object" typeid="AmmunitionObsolete" alias="配对弹头" />
+    <member name="Color" type="color" alias="颜色" />
+    <member name="FireSound" type="audioclip" alias="发射音效" />
+    <member name="HitSound" type="audioclip" alias="击中音效" />
+    <member name="HitEffectPrefab" type="prefab" typeid="Effect" alias="击中效果" />
+    <member name="BulletPrefab" type="prefab" typeid="Bullet" alias="引用子弹" />
 </data>

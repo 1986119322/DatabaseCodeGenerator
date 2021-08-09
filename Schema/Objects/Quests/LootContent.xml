@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="LootContent" type="struct" switch="Type" >
-    <member name="Type" type="enum" typeid="LootItemType" />
-    <member name="ItemId" type="object" typeid="QuestItem" case="QuestItem" alias="QuestItem" options="notnull" />
-    <member name="ItemId" type="object" typeid="Ship" case="EmptyShip" alias="Ship" options="notnull" />
-    <member name="ItemId" type="object" typeid="ShipBuild" case="Ship" alias="ShipBuild" options="notnull" />
-    <member name="ItemId" type="object" typeid="Component" case="Component" alias="Component" options="notnull" />
-    <member name="MinAmount" type="int" case="Money,Fuel,Stars,RandomComponents,
-    RandomItems,QuestItem,Component" minvalue="0" maxvalue="999999999" />
-    <member name="MaxAmount" type="int" case="Money,Fuel,Stars,RandomComponents,
-    RandomItems,QuestItem,Component" minvalue="0" maxvalue="999999999" />
-    <member name="ValueRatio" type="float" case="SomeMoney,RandomComponents" minvalue="0.001" maxvalue="1000" />
-    <member name="Factions" type="struct" typeid="FactionFilter" case="RandomComponents" />
-    <member name="Items" type="struct_list" typeid="LootItem" case="RandomItems,AllItems,ItemsWithChance" />
+<data name="LootContent" type="struct" switch="Type" alias="物品列表">
+    <member name="Type" type="enum" typeid="LootItemType" alias="类型" />
+    <member name="ItemId" type="object" typeid="QuestItem" case="任务物品" alias="任务物品" options="notnull" />
+    <member name="ItemId" type="object" typeid="Ship" case="空船" alias="空船" options="notnull" />
+    <member name="ItemId" type="object" typeid="ShipBuild" case="带配置飞船" alias="带配置飞船" options="notnull" />
+    <member name="ItemId" type="object" typeid="Component" case="组件" alias="组件" options="notnull" />
+    <member name="MinAmount" type="int" case="钱,燃料,星币,随机组件,
+    随机物品,任务物品,组件" minvalue="0" maxvalue="999999999" alias="最小数量" />
+    <member name="MaxAmount" type="int" case="钱,燃料,星币,随机组件,
+    随机物品,任务物品,组件" minvalue="0" maxvalue="999999999" alias="最大数量" />
+    <member name="ValueRatio" type="float" case="一些钱,随机组件" minvalue="0.001" maxvalue="1000" alias="比率" />
+    <member name="Factions" type="struct" typeid="FactionFilter" case="随机组件" alias="筛选势力" />
+    <member name="Items" type="struct_list" typeid="LootItem" case="随机物品,所有物品,几率物品" alias="物品列表" />
 </data>

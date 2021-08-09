@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="QuestOrigin" type="struct" >
-    <member name="Type" type="enum" typeid="QuestOriginType" />
-    <member name="Factions" type="struct" typeid="FactionFilter" />
-    <member name="MinDistance" type="int" minvalue="0" maxvalue="9999" />
-    <member name="MaxDistance" type="int" minvalue="0" maxvalue="9999" />
-    <member name="MinRelations" type="int" minvalue="-100" maxvalue="100" />
-    <member name="MaxRelations" type="int" minvalue="-100" maxvalue="100" />
+<data name="QuestOrigin" type="struct" alias="任务起始地点">
+    <member name="Type" type="enum" typeid="QuestOriginType" alias="类型" />
+    <member name="Factions" type="struct" typeid="FactionFilter" alias="筛选势力" />
+    <member name="MinDistance" type="int" minvalue="0" maxvalue="9999" alias="最小距离" />
+    <member name="MaxDistance" type="int" minvalue="0" maxvalue="9999" alias="最大距离" />
+    <member name="MinRelations" type="int" minvalue="-100" maxvalue="100" alias="最小声望" />
+    <member name="MaxRelations" type="int" minvalue="-100" maxvalue="100" alias="最大声望" />
 </data>

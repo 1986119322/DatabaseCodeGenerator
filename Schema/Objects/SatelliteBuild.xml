@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="SatelliteBuild" type="object" typeid="SatelliteBuild" >
-    <member name="SatelliteId" type="object" typeid="Satellite" alias="Satellite" options="notnull" />
-    <member name="NotAvailableInGame" type="bool" />
-    <member name="DifficultyClass" type="enum" typeid="DifficultyClass" />
-    <member name="Components" type="struct_list" typeid="InstalledComponent" />
+<data name="SatelliteBuild" type="object" typeid="僚机配置" >
+    <member name="SatelliteId" type="object" typeid="Satellite" alias="僚机" options="notnull" />
+    <member name="NotAvailableInGame" type="bool" alias="游戏中不启用" />
+    <member name="DifficultyClass" type="enum" typeid="DifficultyClass" alias="难度等级" />
+    <member name="Components" type="struct_list" typeid="InstalledComponent" alias="组件列表" />
 </data>

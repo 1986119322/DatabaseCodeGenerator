@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data name="BulletBody" type="struct" >
-    <member name="Type" type="enum" typeid="BulletType" />
-    <member name="Size" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Velocity" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Range" type="float" minvalue="0" maxvalue="999999999" />
-    <member name="Lifetime" type="float" minvalue="0" maxvalue="999999999" />
-    <member name="Weight" type="float" minvalue="0" maxvalue="999999999" />
-    <member name="HitPoints" type="int" minvalue="0" maxvalue="999999999" />
-    <member name="Color" type="color" />
-    <member name="BulletPrefab" type="object" typeid="BulletPrefab" />
-    <member name="EnergyCost" type="float" minvalue="0" maxvalue="999999999" />
-    <member name="CanBeDisarmed" type="bool" />
-    <member name="FriendlyFire" type="bool" />
+    <member name="Type" type="enum" typeid="BulletType" alias="类型" />
+    <member name="Size" type="float" minvalue="0" maxvalue="1000" alias="大小" />
+    <member name="Velocity" type="float" minvalue="0" maxvalue="1000" alias="初速" />
+    <member name="Range" type="float" minvalue="0" maxvalue="999999999" alias="射程" />
+    <member name="Lifetime" type="float" minvalue="0" maxvalue="999999999" alias="持续时间" />
+    <member name="Weight" type="float" minvalue="0" maxvalue="999999999" alias="重量" />
+    <member name="HitPoints" type="int" minvalue="0" maxvalue="999999999" alias="生命值" />
+    <member name="Color" type="color" alias="颜色" />
+    <member name="BulletPrefab" type="object" typeid="BulletPrefab" alias="子弹模板" />
+    <member name="EnergyCost" type="float" minvalue="0" maxvalue="999999999" alias="能耗" />
+    <member name="CanBeDisarmed" type="bool" alias="可被点防攻击" />
+    <member name="FriendlyFire" type="bool" alias="可击中友好目标" />
 </data>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Quest" type="object" typeid="Quest" alias="QuestModel">
-    <member name="Name" type="string" />
-    <member name="QuestType" type="enum" typeid="QuestType" />
-    <member name="StartCondition" type="enum" typeid="StartCondition" />
-    <member name="Weight" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Origin" type="struct" typeid="QuestOrigin" />
-    <member name="Requirement" type="struct" typeid="Requirement" />
-    <member name="Level" type="int" minvalue="0" maxvalue="1000" />
-    <member name="Nodes" type="struct_list" typeid="Node" />
+<data name="Quest" type="object" typeid="任务" alias="QuestModel">
+    <member name="Name" type="string" alias="名称" />
+    <member name="QuestType" type="enum" typeid="QuestType" alias="类型" />
+    <member name="StartCondition" type="enum" typeid="StartCondition" alias="触发方式" />
+    <member name="Weight" type="float" minvalue="0" maxvalue="1000" alias="比重" />
+    <member name="Origin" type="struct" typeid="QuestOrigin" alias="起始地点" />
+    <member name="Requirement" type="struct" typeid="Requirement" alias="触发条件" />
+    <member name="Level" type="int" minvalue="0" maxvalue="1000" alias="等级" />
+    <member name="Nodes" type="struct_list" typeid="Node" alias="节点" />
 </data>

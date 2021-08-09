@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Weapon" type="object" typeid="Weapon" options="legacy" >
-    <member name="WeaponClass" type="enum" typeid="WeaponClass" />
-    <member name="FireRate" type="float" minvalue="0" maxvalue="100" />
-    <member name="Spread" type="float" minvalue="0" maxvalue="360" />
-    <member name="Magazine" type="int" minvalue="0" maxvalue="999999999" />
-    <member name="ActivationType" type="enum" typeid="ActivationType" />
-    <member name="ShotSound" type="audioclip" />
-    <member name="ChargeSound" type="audioclip" />
-    <member name="ShotEffectPrefab" type="prefab" typeid="Effect" />
-    <member name="ControlButtonIcon" type="image" typeid="ActionButton" />
+<data name="Weapon" type="object" typeid="武器" options="legacy" >
+    <member name="WeaponClass" type="enum" typeid="WeaponClass" alias="类型" />
+    <member name="FireRate" type="float" minvalue="0" maxvalue="100" alias="发射频率" />
+    <member name="Spread" type="float" minvalue="0" maxvalue="360" alias="散射角" />
+    <member name="Magazine" type="int" minvalue="0" maxvalue="999999999" alias="弹夹" />
+    <member name="ActivationType" type="enum" typeid="ActivationType" alias="控制类型" />
+    <member name="ShotSound" type="audioclip" alias="发射音效" />
+    <member name="ChargeSound" type="audioclip" alias="充能音效" />
+    <member name="ShotEffectPrefab" type="prefab" typeid="Effect" alias="发射效果" />
+    <member name="ControlButtonIcon" type="image" typeid="ActionButton" alias="按钮贴图" />
 </data>

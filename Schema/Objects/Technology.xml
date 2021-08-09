@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Technology" type="object" typeid="Technology" switch="Type" >
-    <member name="Type" type="enum" typeid="TechType" />
-    <member name="ItemId" alias="Component" type="object" typeid="Component" case="Component" options="notnull" />
-    <member name="ItemId" alias="Satellite" type="object" typeid="Satellite" case="Satellite" options="notnull" />
-    <member name="ItemId" alias="Ship" type="object" typeid="Ship" case="Ship" options="notnull" />
-    <member name="Faction" type="object" typeid="Faction" case="Component,Satellite" />
-    <member name="Price" type="int" minvalue="0" maxvalue="10000" />
-    <member name="Hidden" type="bool" />
-    <member name="Special" type="bool" />
-    <member name="Dependencies" type="object_list" typeid="Technology" />
+<data name="Technology" type="object" typeid="科技" switch="Type" alias="科技">
+    <member name="Type" type="enum" typeid="TechType" alias="类型" />
+    <member name="ItemId" alias="组件" type="object" typeid="Component" case="组件" options="notnull" />
+    <member name="ItemId" alias="僚机" type="object" typeid="Satellite" case="僚机" options="notnull" />
+    <member name="ItemId" alias="飞船" type="object" typeid="Ship" case="飞船" options="notnull" />
+    <member name="Faction" type="object" typeid="Faction" case="组件,僚机" alias="势力" />
+    <member name="Price" type="int" minvalue="0" maxvalue="10000" alias="科技需求" />
+    <member name="Hidden" type="bool" alias="隐藏" />
+    <member name="Special" type="bool" alias="特殊" />
+    <member name="Dependencies" type="object_list" typeid="Technology" alias="前置科技" />
 </data>

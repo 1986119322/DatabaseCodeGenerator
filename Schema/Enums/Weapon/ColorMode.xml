@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="ColorMode">
-    <item name="TakeFromOwner" />
-    <item name="UseMyOwn" />
-    <item name="Blend" />
-    <item name="Multiply" />
+    <item name="继承上级颜色" />
+    <item name="固定颜色" />
+    <item name="混合颜色" />
+    <item name="颜色通道" />
 </data>

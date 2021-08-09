@@ -232,7 +232,7 @@ namespace DatabaseCodeGenerator.EditorCode.Templates
             this.Write(" (type == ");
             
             #line 54 "D:\EH\CN\DBE\DatabaseCodeGenerator\DatabaseCodeGenerator\EditorCode\Templates\DatabaseContentTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Constants.ItemTypeEnum + "." + item.name));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Constants.ItemTypeEnum + "." + item.typeid));
             
             #line default
             #line hidden
@@ -243,14 +243,14 @@ namespace DatabaseCodeGenerator.EditorCode.Templates
             
             #line default
             #line hidden
-            this.Write(".ContainsKey(item.Id)) throw new DatabaseException(\"Duplicate ");
+            this.Write(".ContainsKey(item.Id)) throw new DatabaseException(\"重复的");
             
             #line 56 "D:\EH\CN\DBE\DatabaseCodeGenerator\DatabaseCodeGenerator\EditorCode\Templates\DatabaseContentTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.name));
+            this.Write(this.ToStringHelper.ToStringWithCulture(item.typeid));
             
             #line default
             #line hidden
-            this.Write(" ID - \" + item.Id + \" (\" + name + \" | \" + ");
+            this.Write("ID - \" + item.Id + \" (\" + name + \" | \" + ");
             
             #line 56 "D:\EH\CN\DBE\DatabaseCodeGenerator\DatabaseCodeGenerator\EditorCode\Templates\DatabaseContentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(DataMember(item.name)));
@@ -294,7 +294,7 @@ namespace DatabaseCodeGenerator.EditorCode.Templates
             this.Write(" (type == ");
             
             #line 68 "D:\EH\CN\DBE\DatabaseCodeGenerator\DatabaseCodeGenerator\EditorCode\Templates\DatabaseContentTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Constants.ItemTypeEnum + "." + item.name));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Constants.ItemTypeEnum + "." + item.typeid));
             
             #line default
             #line hidden
@@ -312,14 +312,14 @@ namespace DatabaseCodeGenerator.EditorCode.Templates
             
             #line default
             #line hidden
-            this.Write(" != null)\r\n                    throw new DatabaseException(\"Duplicate ");
+            this.Write(" != null)\r\n                    throw new DatabaseException(\"发现重复的");
             
             #line 74 "D:\EH\CN\DBE\DatabaseCodeGenerator\DatabaseCodeGenerator\EditorCode\Templates\DatabaseContentTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.name));
+            this.Write(this.ToStringHelper.ToStringWithCulture(item.typeid));
             
             #line default
             #line hidden
-            this.Write(" file found - \" + name + \" | \" + ");
+            this.Write("文件 - \" + name + \" | \" + ");
             
             #line 74 "D:\EH\CN\DBE\DatabaseCodeGenerator\DatabaseCodeGenerator\EditorCode\Templates\DatabaseContentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.name));
@@ -345,8 +345,8 @@ namespace DatabaseCodeGenerator.EditorCode.Templates
             
             #line default
             #line hidden
-            this.Write("            else\r\n            {\r\n                throw new DatabaseException(\"Unk" +
-                    "nown file type - \" + type + \"(\" + name + \")\");\r\n            }\r\n");
+            this.Write("            else\r\n            {\r\n                throw new DatabaseException(\"未知的" +
+                    "文件类型 - \" + type + \"(\" + name + \")\");\r\n            }\r\n");
             
             #line 87 "D:\EH\CN\DBE\DatabaseCodeGenerator\DatabaseCodeGenerator\EditorCode\Templates\DatabaseContentTemplate.tt"
 

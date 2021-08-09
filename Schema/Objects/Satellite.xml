@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Satellite" type="object" typeid="Satellite" >
-    <member name="Name" type="string" />
-    <member name="ModelImage" type="image" typeid="Satellite" />
-    <member name="ModelScale" type="float" minvalue="0.1" maxvalue="100" />
-    <member name="SizeClass" type="enum" typeid="SizeClass" />
+<data name="Satellite" type="object" typeid="僚机" >
+    <member name="Name" type="string" alias="名称" />
+    <member name="ModelImage" type="image" typeid="Satellite" alias="模型贴图" />
+    <member name="ModelScale" type="float" minvalue="0.1" maxvalue="100" alias="模型大小" />
+    <member name="SizeClass" type="enum" typeid="SizeClass" alias="可安装等级" />
     <member name="Layout" type="layout" />
-    <member name="Barrels" type="struct_list" typeid="Barrel" />
+    <member name="Barrels" type="struct_list" typeid="Barrel" alias="炮管列表" />
 </data>

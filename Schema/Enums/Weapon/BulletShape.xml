@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="BulletShape">
-    <item name="Projectile" />
-    <item name="Rocket" />
-    <item name="LaserBeam" />
-    <item name="LightningBolt" />
-    <item name="EnergyBeam" />
-    <item name="Spark" />
-    <item name="Mine" />
+    <item name="炮弹" />
+    <item name="导弹" />
+    <item name="直线激光束" />
+    <item name="闪电束" />
+    <item name="能量束" />
+    <item name="火花" />
+    <item name="雷" />
 </data>

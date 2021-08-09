@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="ShipCategory">
-    <item name="Common" />
-    <item name="Rare" />
-    <item name="Flagship" />
-    <item name="Special" />
-    <item name="Starbase" />
-    <item name="Hidden" />
-    <item name="Drone" />
+    <item name="常规" />
+    <item name="稀有" />
+    <item name="旗舰" />
+    <item name="特殊" />
+    <item name="空间站" />
+    <item name="隐藏" />
+    <item name="无人机" />
 </data>

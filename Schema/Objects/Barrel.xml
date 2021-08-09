@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data name="Barrel" type="struct" >
-    <member name="Position" type="vector" />
-    <member name="Rotation" type="float" minvalue="-360" maxvalue="360" />
-    <member name="Offset" type="float" minvalue="0" maxvalue="1" />
-    <member name="PlatformType" type="enum" typeid="PlatformType" />
-    <member name="AutoAimingArc" type="float" minvalue="0" maxvalue="360" />
-    <member name="RotationSpeed" type="float" minvalue="0" maxvalue="1000" />
-    <member name="WeaponClass" type="string" />
-    <member name="Image" type="image" typeid="Satellite" />
-    <member name="Size" type="float" minvalue="0" maxvalue="100" />
+    <member name="Position" type="vector" alias="位置" />
+    <member name="Rotation" type="float" minvalue="-360" maxvalue="360" alias="初始朝向" />
+    <member name="Offset" type="float" minvalue="0" maxvalue="1" alias="发射偏移" />
+    <member name="PlatformType" type="enum" typeid="PlatformType" alias="自瞄类型" />
+    <member name="AutoAimingArc" type="float" minvalue="0" maxvalue="360" alias="自瞄角度" />
+    <member name="RotationSpeed" type="float" minvalue="0" maxvalue="1000" alias="旋转速度" />
+    <member name="WeaponClass" type="string" alias="红格类型" />
+    <member name="Image" type="image" typeid="Satellite" alias="炮台贴图" />
+    <member name="Size" type="float" minvalue="0" maxvalue="100" alias="炮台大小" />
 </data>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Fleet" type="object" typeid="Fleet" >
-    <member name="Factions" type="struct" typeid="FactionFilter" />
-    <member name="LevelBonus" type="int" minvalue="-10000" maxvalue="10000" />
-    <member name="NoRandomShips" type="bool" />
-    <member name="CombatTimeLimit" type="int" minvalue="0" maxvalue="999" />
-    <member name="LootCondition" type="enum" typeid="RewardCondition" />
-    <member name="ExpCondition" type="enum" typeid="RewardCondition" />
-    <member name="SpecificShips" type="object_list" typeid="ShipBuild" />
+<data name="Fleet" type="object" typeid="舰队" >
+    <member name="Factions" type="struct" typeid="FactionFilter" alias="筛选势力" />
+    <member name="LevelBonus" type="int" minvalue="-10000" maxvalue="10000" alias="等级加成" />
+    <member name="NoRandomShips" type="bool" alias="无随机船" />
+    <member name="CombatTimeLimit" type="int" minvalue="0" maxvalue="999" alias="战斗时间限制" />
+    <member name="LootCondition" type="enum" typeid="RewardCondition" alias="战利品掉落条件" />
+    <member name="ExpCondition" type="enum" typeid="RewardCondition" alias="经验值掉落条件" />
+    <member name="SpecificShips" type="object_list" typeid="ShipBuild" alias="指定飞船配置" />
 </data>

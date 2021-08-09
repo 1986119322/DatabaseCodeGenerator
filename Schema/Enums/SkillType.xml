@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="SkillType">
-    <item name="Undefined">0</item>
-    <item name="Blueprint">1</item>
-    <item name="Ship">2</item>
-    <item name="ShipAttack">4</item>
-    <item name="ShipDefense">5</item>
-    <item name="StarbaseAttack">6</item>
-    <item name="StarbaseDefense">7</item>
-    <item name="BetterPrices">10</item>
-    <item name="BetterLoot">12</item>
+    <item name="未定义">0</item>
+    <item name="蓝图">1</item>
+    <item name="飞船">2</item>
+    <item name="飞船伤害">4</item>
+    <item name="飞船防御">5</item>
+    <item name="空间站攻击">6</item>
+    <item name="空间站防御">7</item>
+    <item name="购买折扣">10</item>
+    <item name="掉落提升">12</item>
 </data>

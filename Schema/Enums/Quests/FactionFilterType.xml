@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="FactionFilterType">
-    <item name="AllButList">0</item>
-    <item name="ListOnly">1</item>
-    <item name="StarOwnersAndList">2</item>
-    <item name="AllAvailable">3</item>
+    <item name="黑名单">0</item>
+    <item name="白名单">1</item>
+    <item name="白名单和当地势力">2</item>
+    <item name="任意">3</item>
 </data>

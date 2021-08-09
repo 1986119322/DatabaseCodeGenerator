@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="NodeType">
-    <item name="Undefined">0</item>
-    <item name="ComingSoon">1</item>
+    <item name="未定义">0</item>
+    <item name="即将到来">1</item>
     
-    <item name="ShowDialog">10</item>
-    <item name="OpenShipyard">11</item>
+    <item name="显示对话">10</item>
+    <item name="打开船坞">11</item>
     
-    <item name="Switch">15</item>
-    <item name="Random">16</item>
-    <item name="Condition">17</item>
+    <item name="条件">15</item>
+    <item name="随机">16</item>
+    <item name="状态">17</item>
     
-    <item name="AttackFleet">20</item>
-    <item name="AttackOccupants">21</item>
+    <item name="攻击舰队">20</item>
+    <item name="攻击星系敌人">21</item>
     
-    <item name="DestroyOccupants">25</item>
-    <item name="SuppressOccupants">26</item>
+    <item name="摧毁星系敌人">25</item>
+    <item name="压制星系敌人">26</item>
     
-    <item name="Retreat">30</item>
+    <item name="撤退">30</item>
 
-    <item name="ReceiveItem">35</item>
-    <item name="RemoveItem">36</item>
-    <item name="Trade">37</item>
+    <item name="接收物品">35</item>
+    <item name="移除物品">36</item>
+    <item name="交易">37</item>
 
-    <item name="CompleteQuest">40</item>
-    <item name="FailQuest">41</item>
-    <item name="CancelQuest">42</item>
-    <item name="StartQuest">43</item>
+    <item name="完成任务">40</item>
+    <item name="失败任务">41</item>
+    <item name="取消任务">42</item>
+    <item name="开始任务">43</item>
 
-    <item name="SetCharacterRelations">50</item>
-    <item name="SetFactionRelations">51</item>
-    <item name="ChangeCharacterRelations">55</item>
-    <item name="ChangeFactionRelations">56</item>
+    <item name="设置角色好感">50</item>
+    <item name="设置势力声望">51</item>
+    <item name="更改角色好感">55</item>
+    <item name="更改势力声望">56</item>
 
-    <item name="CaptureStarBase">60</item>
-    <item name="LiberateStarBase">61</item>
-    <item name="ChangeFaction">62</item>
+    <item name="占领空间站">60</item>
+    <item name="解放空间站">61</item>
+    <item name="更改星区势力">62</item>
 </data>

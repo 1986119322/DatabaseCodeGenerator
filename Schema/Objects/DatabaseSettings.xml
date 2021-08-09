@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="DatabaseSettings" type="settings" typeid="DatabaseSettings" >
-    <member name="DatabaseVersion" type="int" minvalue="1" />
-    <member name="ModName" type="string" />
-    <member name="ModId" type="string" />
-    <member name="ModVersion" type="int" />
-    <member name="UnloadOriginalDatabase" type="bool" />
+<data name="DatabaseSettings" type="settings" typeid="数据库设置" >
+    <member name="DatabaseVersion" type="int" minvalue="1" alias="数据库版本" />
+    <member name="ModName" type="string" alias="模组名" />
+    <member name="ModId" type="string" alias="模组唯一标识" />
+    <member name="ModVersion" type="int" alias="模组版本" />
+    <member name="UnloadOriginalDatabase" type="bool" alias="不装载原版数据库" />
 </data>

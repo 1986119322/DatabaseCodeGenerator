@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="BulletTrigger" type="struct" switch="EffectType" >
-    <member name="Condition" type="enum" typeid="BulletTriggerCondition" />
-    <member name="EffectType" type="enum" typeid="BulletEffectType" />
-    <member name="VisualEffect" type="object" typeid="VisualEffect" case="PlaySfx" />
-    <member name="AudioClip" type="audioclip" case="PlaySfx,SpawnBullet" />
-    <member name="Ammunition" type="object" typeid="Ammunition" case="SpawnBullet" />
-    <member name="Color" type="color" case="PlaySfx,SpawnBullet" />
-    <member name="ColorMode" type="enum" typeid="ColorMode" case="PlaySfx,SpawnBullet" />
-    <member name="Quantity" type="int" minvalue="0" maxvalue="1000" case="SpawnBullet" />
-    <member name="Size" type="float" minvalue="0" maxvalue="100" case="PlaySfx,SpawnBullet" />
-    <member name="Lifetime" type="float" minvalue="0" maxvalue="1000" case="PlaySfx" />
-    <member name="Cooldown" type="float" minvalue="0" maxvalue="1000" case="SpawnBullet" />
-    <member name="RandomFactor" type="float" minvalue="0" maxvalue="1" case="SpawnBullet" />
-    <member name="PowerMultiplier" type="float" minvalue="0" maxvalue="1000" case="SpawnBullet" />
-    <member name="MaxNestingLevel" type="int" minvalue="0" maxvalue="100" case="SpawnBullet" />
+<data name="BulletTrigger" type="struct" switch="EffectType" alias="弹头触发器">
+    <member name="Condition" type="enum" typeid="BulletTriggerCondition" alias="触发器类型" />
+    <member name="EffectType" type="enum" typeid="BulletEffectType" alias="行为类型" />
+    <member name="VisualEffect" type="object" typeid="VisualEffect" case="播放视觉效果" alias="视觉效果" />
+    <member name="AudioClip" type="audioclip" case="播放视觉效果,生成弹头" alias="音效" />
+    <member name="Ammunition" type="object" typeid="Ammunition" case="生成弹头" alias="生成弹头" />
+    <member name="Color" type="color" case="播放视觉效果,生成弹头" alias="颜色" />
+    <member name="ColorMode" type="enum" typeid="ColorMode" case="播放视觉效果,生成弹头" alias="颜色模式" />
+    <member name="Quantity" type="int" minvalue="0" maxvalue="1000" case="生成弹头" alias="生成数量" />
+    <member name="Size" type="float" minvalue="0" maxvalue="100" case="播放视觉效果,生成弹头" alias="大小" />
+    <member name="Lifetime" type="float" minvalue="0" maxvalue="1000" case="播放视觉效果" alias="持续时间" />
+    <member name="Cooldown" type="float" minvalue="0" maxvalue="1000" case="生成弹头" alias="冷却" />
+    <member name="RandomFactor" type="float" minvalue="0" maxvalue="1" case="生成弹头" alias="随机系数" />
+    <member name="PowerMultiplier" type="float" minvalue="0" maxvalue="1000" case="生成弹头" alias="强度乘数" />
+    <member name="MaxNestingLevel" type="int" minvalue="0" maxvalue="100" case="生成弹头" alias="最大嵌套层数" />
 </data>

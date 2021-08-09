@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data name="InstalledComponent" type="struct">
-    <member name="ComponentId" type="object" typeid="Component" alias="Component" options="notnull" />
-    <member name="Modification" type="enum" typeid="ComponentModType" />
-    <member name="Quality" type="enum" typeid="ModificationQuality" />
-    <member name="Locked" type="bool" />
+    <member name="ComponentId" type="object" typeid="Component" alias="组件" options="notnull" />
+    <member name="Modification" type="enum" typeid="ComponentModType" alias="附加属性" />
+    <member name="Quality" type="enum" typeid="ModificationQuality" alias="属性品质" />
+    <member name="Locked" type="bool" alias="锁定" />
     <member name="X" type="int" minvalue="-32768" maxvalue="32767" />
     <member name="Y" type="int" minvalue="-32768" maxvalue="32767" />
-    <member name="BarrelId" type="int" minvalue="0" maxvalue="255" />
-    <member name="Behaviour" type="int" minvalue="0" maxvalue="10" />
-    <member name="KeyBinding" type="int" minvalue="-10" maxvalue="10" />
+    <member name="BarrelId" type="int" minvalue="0" maxvalue="255" alias="炮管Id" />
+    <member name="Behaviour" type="int" minvalue="0" maxvalue="10" alias="无人机行为" />
+    <member name="KeyBinding" type="int" minvalue="-10" maxvalue="10" alias="绑定按键" />
 </data>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="ExplorationSettings" type="settings" typeid="ExplorationSettings" >
-    <member name="OutpostShip" type="object" typeid="Ship" />
-    <member name="TurretShip" type="object" typeid="Ship" />
-    <member name="InfectedPlanetFaction" type="object" typeid="Faction" />
-    <member name="HiveShipBuild" type="object" typeid="ShipBuild" />
+<data name="ExplorationSettings" type="settings" typeid="探索设置" >
+    <member name="OutpostShip" type="object" typeid="Ship" alias="地面哨站船体" />
+    <member name="TurretShip" type="object" typeid="Ship" alias="地面炮塔船体" />
+    <member name="InfectedPlanetFaction" type="object" typeid="Faction" alias="感染星球势力" />
+    <member name="HiveShipBuild" type="object" typeid="ShipBuild" alias="巢穴飞船配置" />
 </data>

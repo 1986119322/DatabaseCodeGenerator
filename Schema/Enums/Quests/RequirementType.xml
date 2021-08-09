@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="RequirementType">
-    <item name="Empty">0</item>
-    <item name="Any">1</item>
-    <item name="All">2</item>
-    <item name="None">3</item>
+    <item name="空">0</item>
+    <item name="任意">1</item>
+    <item name="所有">2</item>
+    <item name="无一">3</item>
     
-    <item name="PlayerPosition">6</item>
-    <item name="RandomStarSystem">7</item>
-    <item name="AggressiveOccupants">8</item>
+    <item name="玩家位置">6</item>
+    <item name="移动到任意星系">7</item>
+    <item name="攻击性星系敌人">8</item>
     
-    <item name="QuestCompleted">9</item>
-    <item name="QuestActive">10</item>
+    <item name="任务已完成">9</item>
+    <item name="任务激活中">10</item>
     
-    <item name="CharacterRelations">15</item>
-    <item name="FactionRelations">16</item>
-    <item name="StarbaseCaptured">17</item>
+    <item name="角色好感">15</item>
+    <item name="星区声望">16</item>
+    <item name="星区已占领">17</item>
     
-    <item name="Faction">20</item>
+    <item name="势力">20</item>
     
-    <item name="HaveQuestItem">25</item>
-    <item name="HaveItem">26</item>
-    <item name="HaveItemById">27</item>
+    <item name="拥有任务物品">25</item>
+    <item name="拥有物品">26</item>
+    <item name="拥有指定物品">27</item>
     
-    <item name="ComeToOrigin">30</item>
+    <item name="返回任务起始点">30</item>
 
-    <item name="TimeSinceQuestStart">40</item>
-    <item name="TimeSinceLastCompletion">41</item>
+    <item name="从任务触发开始进行计时">40</item>
+    <item name="从任务上次完成时开始计时">41</item>
 </data>

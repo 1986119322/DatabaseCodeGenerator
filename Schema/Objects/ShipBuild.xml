@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="ShipBuild" type="object" typeid="ShipBuild" >
-    <member name="ShipId" type="object" typeid="Ship" alias="Ship" options="notnull" />
-    <member name="NotAvailableInGame" type="bool" />
-    <member name="DifficultyClass" type="enum" typeid="DifficultyClass" />
-    <member name="BuildFaction" type="object" typeid="Faction" />
-    <member name="Components" type="struct_list" typeid="InstalledComponent" />
+<data name="ShipBuild" type="object" typeid="飞船配置" >
+    <member name="ShipId" type="object" typeid="Ship" alias="飞船" options="notnull" />
+    <member name="NotAvailableInGame" type="bool" alias="游戏中不启用" />
+    <member name="DifficultyClass" type="enum" typeid="DifficultyClass" alias="难度等级" />
+    <member name="BuildFaction" type="object" typeid="Faction" alias="会建造的势力" />
+    <member name="Components" type="struct_list" typeid="InstalledComponent" alias="组件列表" />
 </data>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="ComponentCategory">
-    <item name="Undefined" />
-    <item name="Weapon" />
-    <item name="Defense" />
-    <item name="Energy" />
-    <item name="Engine" />
-    <item name="Drones" />
-    <item name="Special" />
+    <item name="未定义" />
+    <item name="武器" />
+    <item name="防御" />
+    <item name="能量" />
+    <item name="引擎" />
+    <item name="无人机" />
+    <item name="特殊" />
 </data>

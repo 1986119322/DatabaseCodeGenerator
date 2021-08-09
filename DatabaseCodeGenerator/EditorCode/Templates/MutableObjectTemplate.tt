@@ -42,7 +42,7 @@ namespace <#= Utils.RootNamespace #>.<#= Utils.ClassesNamespace #>
 			}
 #>
 				default:
-					throw new DatabaseException("<#= ObjectData.name #>: Invalid content type - " + type);
+					throw new DatabaseException("<#= Utils.DataClassName(ObjectData) #>: 无效的内容类型 - " + type);
 			}
 		}
 
@@ -133,10 +133,12 @@ namespace <#= Utils.RootNamespace #>.<#= Utils.ClassesNamespace #>
 				var type = GetType();
 
 <#
+				string switchEnumAlias = string.Empty;
 				foreach (var member in baseMembers)
                 {
 					var memberName = !string.IsNullOrEmpty(member.alias) ? member.alias : member.name;
 					var eventName =  member.name == ObjectData.switchEnum ? "OnTypeChanged" : "DataChangedEvent";
+					switchEnumAlias = eventName.Equals("OnTypeChanged") ? memberName : switchEnumAlias;
 #>
 				yield return new Property(this, type.GetField("<#= memberName #>"), <#= eventName #>);
 <#
@@ -150,7 +152,7 @@ namespace <#= Utils.RootNamespace #>.<#= Utils.ClassesNamespace #>
 
 		private void OnTypeChanged()
 		{
-			_content = CreateContent(<#= ObjectData.switchEnum #>);
+			_content = CreateContent(<#= switchEnumAlias #>);
 			DataChangedEvent?.Invoke();
 			LayoutChangedEvent?.Invoke();
 		}

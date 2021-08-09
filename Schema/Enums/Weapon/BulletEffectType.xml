@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="BulletEffectType">
-    <item name="None" />
-    <item name="PlaySfx" />
-    <item name="SpawnBullet" />
-    <item name="Detonate" />
+    <item name="无" />
+    <item name="播放视觉效果" />
+    <item name="生成弹头" />
+    <item name="销毁弹头" />
 </data>

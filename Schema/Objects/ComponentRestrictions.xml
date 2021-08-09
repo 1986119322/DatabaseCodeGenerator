@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data name="ComponentRestrictions" type="struct">
-    <member name="ShipSizes" type="enum_flags" typeid="SizeClass" />
-    <member name="NotForOrganicShips" type="bool" />
-    <member name="NotForMechanicShips" type="bool" />
-    <member name="UniqueComponentTag" type="string" />
+    <member name="ShipSizes" type="enum_flags" typeid="SizeClass" alias="可用舰船等级" />
+    <member name="NotForOrganicShips" type="bool" alias="生物船不可用" />
+    <member name="NotForMechanicShips" type="bool" alias="机械船不可用" />
+    <member name="UniqueComponentTag" type="string" alias="唯一组件标签" />
 </data>

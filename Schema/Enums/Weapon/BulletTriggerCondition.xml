@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="BulletTriggerCondition">
-    <item name="Undefined" />
-    <item name="Created" />
-    <item name="Destroyed" />
-    <item name="Hit" />
-    <item name="Disarmed" />
-    <item name="Expired" />
-    <item name="Detonated" />
-    <item name="OutOfAmmo" />
+    <item name="未定义" />
+    <item name="创建" />
+    <item name="摧毁" />
+    <item name="击中" />
+    <item name="被消除" />
+    <item name="超时" />
+    <item name="销毁" />
+    <item name="弹头达到最大嵌套" />
 </data>

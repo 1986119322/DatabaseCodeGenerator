@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="ImpactEffectType">
-    <item name="Damage" />
-    <item name="Push" />
-    <item name="Pull" />
-    <item name="DrainEnergy" />
-    <item name="SiphonHitPoints" />
-    <item name="SlowDown" />
-    <item name="CaptureDrones" />
-    <item name="Repair" />
+    <item name="伤害" />
+    <item name="推" />
+    <item name="拉" />
+    <item name="烧能" />
+    <item name="吸血" />
+    <item name="减速" />
+    <item name="捕获无人机" />
+    <item name="修复" />
 </data>

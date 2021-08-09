@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Device" type="object" typeid="Device" options="legacy" >
-    <member name="DeviceClass" type="enum" typeid="DeviceClass" />
-    <member name="EnergyConsumption" type="float" minvalue="0" maxvalue="999999999" />
-    <member name="PassiveEnergyConsumption" type="float" minvalue="0" maxvalue="999999999" />
-    <member name="Power" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Range" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Size" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Cooldown" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Lifetime" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Offset" type="vector" />
-    <member name="ActivationType" type="enum" typeid="ActivationType" />
-    <member name="Color" type="color" />
-    <member name="Sound" type="audioclip" />
-    <member name="EffectPrefab" type="prefab" typeid="Effect" />
-    <member name="ObjectPrefab" type="prefab" typeid="Object" />
-    <member name="ControlButtonIcon" type="image" typeid="ActionButton" />
+<data name="Device" type="object" typeid="设备" options="legacy" >
+    <member name="DeviceClass" type="enum" typeid="DeviceClass" alias="类型" />
+    <member name="EnergyConsumption" type="float" minvalue="0" maxvalue="999999999" alias="主动能耗" />
+    <member name="PassiveEnergyConsumption" type="float" minvalue="0" maxvalue="999999999" alias="被动能耗" />
+    <member name="Power" type="float" minvalue="0" maxvalue="1000" alias="效果强度" />
+    <member name="Range" type="float" minvalue="0" maxvalue="1000" alias="射程" />
+    <member name="Size" type="float" minvalue="0" maxvalue="1000" alias="大小" />
+    <member name="Cooldown" type="float" minvalue="0" maxvalue="1000" alias="冷却" />
+    <member name="Lifetime" type="float" minvalue="0" maxvalue="1000" alias="持续时间" />
+    <member name="Offset" type="vector" alias="效果偏移" />
+    <member name="ActivationType" type="enum" typeid="ActivationType" alias="控制类型" />
+    <member name="Color" type="color" alias="颜色" />
+    <member name="Sound" type="audioclip" alias="音效" />
+    <member name="EffectPrefab" type="prefab" typeid="Effect" alias="引用效果" />
+    <member name="ObjectPrefab" type="prefab" typeid="Object" alias="引用对象" />
+    <member name="ControlButtonIcon" type="image" typeid="ActionButton" alias="按钮贴图" />
 </data>

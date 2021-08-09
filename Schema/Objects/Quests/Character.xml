@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Character" type="object" typeid="Character" >
-    <member name="Name" type="string" />
-    <member name="AvatarIcon" type="image" typeid="AvatarIcon" />
-    <member name="Faction" type="object" typeid="Faction" />
-    <member name="Inventory" type="object" typeid="Loot" />
-    <member name="Fleet" type="object" typeid="Fleet" />
-    <member name="Relations" type="int" minvalue="-100" maxvalue="100" />
-    <member name="IsUnique" type="bool" />
+<data name="Character" type="object" typeid="角色" >
+    <member name="Name" type="string" alias="名称" />
+    <member name="AvatarIcon" type="image" typeid="AvatarIcon" alias="头像" />
+    <member name="Faction" type="object" typeid="Faction" alias="势力" />
+    <member name="Inventory" type="object" typeid="Loot" alias="物品栏" />
+    <member name="Fleet" type="object" typeid="Fleet" alias="舰队" />
+    <member name="Relations" type="int" minvalue="-100" maxvalue="100" alias="初始好感度" />
+    <member name="IsUnique" type="bool" alias="是否唯一" />
 </data>

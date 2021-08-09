@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data name="VisualEffectElement" type="struct" >
-    <member name="Type" type="enum" typeid="VisualEffectType" />
-    <member name="Image" type="image" typeid="Effect" />
-    <member name="ColorMode" type="enum" typeid="ColorMode" />
-    <member name="Color" type="color" />
-    <member name="Size" type="float" minvalue="0.001" maxvalue="100" />
-    <member name="StartTime" type="float" minvalue="0" maxvalue="1000" />
-    <member name="Lifetime" type="float" minvalue="0" maxvalue="1000" />
+    <member name="Type" type="enum" typeid="VisualEffectType" alias="类型" />
+    <member name="Image" type="image" typeid="Effect" alias="贴图" />
+    <member name="ColorMode" type="enum" typeid="ColorMode" alias="颜色模式" />
+    <member name="Color" type="color" alias="颜色" />
+    <member name="Size" type="float" minvalue="0.001" maxvalue="100" alias="大小" />
+    <member name="StartTime" type="float" minvalue="0" maxvalue="1000" alias="开始时间" />
+    <member name="Lifetime" type="float" minvalue="0" maxvalue="1000" alias="持续时间" />
 </data>

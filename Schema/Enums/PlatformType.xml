@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="PlatformType">
-    <item name="Common" />
-    <item name="AutoTarget" />
-    <item name="AutoTargetFrontal" />
-    <item name="TargetingUnit" />
+    <item name="无自瞄" />
+    <item name="全角自瞄" />
+    <item name="前方自瞄" />
+    <item name="瞄准单元" />
 </data>

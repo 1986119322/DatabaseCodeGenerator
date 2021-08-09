@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="ShipSettings" type="settings" typeid="ShipSettings">
-    <member name="DefaultWeightPerCell" type="float" minvalue="1" maxvalue="1000000" />
-    <member name="MinimumWeightPerCell" type="float" minvalue="1" maxvalue="1000000" />
-    <member name="BaseArmorPoints" type="float" minvalue="0" maxvalue="1000000" />
-    <member name="ArmorPointsPerCell" type="float" minvalue="0" maxvalue="1000000" />
-    <member name="ArmorRepairCooldown" type="float" minvalue="0" maxvalue="60" />
-    <member name="BaseEnergyPoints" type="float" minvalue="0" maxvalue="1000000" />
-    <member name="BaseEnergyRechargeRate" type="float" minvalue="0" maxvalue="1000000" />
-    <member name="EnergyRechargeCooldown" type="float" minvalue="0" maxvalue="60" />
-    <member name="BaseShieldRechargeRate" type="float" minvalue="0" maxvalue="1000000" />
-    <member name="ShieldRechargeCooldown" type="float" minvalue="0" maxvalue="60" />
-    <member name="BaseDroneReconstructionSpeed" type="float" minvalue="0" maxvalue="100" />
-    <member name="MaxVelocity" type="float" minvalue="5" maxvalue="30" />
-    <member name="MaxTurnRate" type="float" minvalue="5" maxvalue="30" />
+<data name="ShipSettings" type="settings" typeid="飞船设置">
+    <member name="DefaultWeightPerCell" type="float" minvalue="1" maxvalue="1000000" alias="每格基础重量" />
+    <member name="MinimumWeightPerCell" type="float" minvalue="1" maxvalue="1000000" alias="每格最小重量" />
+    <member name="BaseArmorPoints" type="float" minvalue="0" maxvalue="1000000" alias="基础装甲值" />
+    <member name="ArmorPointsPerCell" type="float" minvalue="0" maxvalue="1000000" alias="每格装甲值" />
+    <member name="ArmorRepairCooldown" type="float" minvalue="0" maxvalue="60" alias="装甲值回复间隔" />
+    <member name="BaseEnergyPoints" type="float" minvalue="0" maxvalue="1000000" alias="基础能量值" />
+    <member name="BaseEnergyRechargeRate" type="float" minvalue="0" maxvalue="1000000" alias="基础能量回充" />
+    <member name="EnergyRechargeCooldown" type="float" minvalue="0" maxvalue="60" alias="能量回充间隔" />
+    <member name="BaseShieldRechargeRate" type="float" minvalue="0" maxvalue="1000000" alias="基础护盾回充" />
+    <member name="ShieldRechargeCooldown" type="float" minvalue="0" maxvalue="60" alias="护盾回充间隔" />
+    <member name="BaseDroneReconstructionSpeed" type="float" minvalue="0" maxvalue="100" alias="基础无人机重建速度" />
+    <member name="MaxVelocity" type="float" minvalue="5" maxvalue="30" alias="最大速度" />
+    <member name="MaxTurnRate" type="float" minvalue="5" maxvalue="30" alias="最大转速" />
 </data>

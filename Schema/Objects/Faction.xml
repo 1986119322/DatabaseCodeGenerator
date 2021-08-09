@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Faction" type="object" typeid="Faction" >
-    <member name="Name" type="string" />
-    <member name="Color" type="color" />
-    <member name="HomeStarDistance" type="int" minvalue="0" maxvalue="1000" />
-    <member name="WanderingShipsDistance" type="int" minvalue="0" maxvalue="1000" />
-    <member name="Hidden" type="bool" />
-    <member name="Hostile" type="bool" />
+<data name="Faction" type="object" typeid="势力" >
+    <member name="Name" type="string" alias="名称" />
+    <member name="Color" type="color" alias="颜色" />
+    <member name="HomeStarDistance" type="int" minvalue="0" maxvalue="1000" alias="要塞出现距离" />
+    <member name="WanderingShipsDistance" type="int" minvalue="0" maxvalue="1000" alias="敌对飞船出现距离" />
+    <member name="Hidden" type="bool" alias="隐藏" />
+    <member name="Hostile" type="bool" alias="敌对" />
 </data>
