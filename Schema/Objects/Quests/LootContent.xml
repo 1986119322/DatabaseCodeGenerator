@@ -3,7 +3,7 @@
     <member name="Type" type="enum" typeid="LootItemType" alias="类型" />
     <member name="ItemId" type="object" typeid="QuestItem" case="任务物品" alias="任务物品" options="notnull" />
     <member name="ItemId" type="object" typeid="Ship" case="空船" alias="空船" options="notnull" />
-    <member name="ItemId" type="object" typeid="ShipBuild" case="带配置飞船" alias="带配置飞船" options="notnull" />
+    <member name="ItemId" type="object" typeid="ShipBuild" case="带配置飞船" alias="飞船配置" options="notnull" />
     <member name="ItemId" type="object" typeid="Component" case="组件" alias="组件" options="notnull" />
     <member name="MinAmount" type="int" case="钱,燃料,星币,随机组件,
     随机物品,任务物品,组件" minvalue="0" maxvalue="999999999" alias="最小数量" />
