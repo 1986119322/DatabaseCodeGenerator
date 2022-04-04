@@ -12,7 +12,7 @@
     <member name="MinValue" type="int" case="从任务触发开始进行计时,从任务上次完成时开始计时" minvalue="0" maxvalue="999999" alias="分钟" />
     <member name="MaxValue" type="int" case="从任务触发开始进行计时,从任务上次完成时开始计时" minvalue="0" maxvalue="999999" alias="小时" />
     <member name="Character" type="object" typeid="Character" case="角色好感" alias="角色" />
-    <member name="势力" type="object" typeid="Faction" case="势力" alias="势力" />
+    <member name="Faction" type="object" typeid="Faction" case="势力" alias="势力" />
     <member name="Loot" type="struct" typeid="LootContent" case="拥有物品" alias="物品列表" />
     <member name="Requirements" type="struct_list" typeid="Requirement" case="所有,任意,无一" alias="条件" />
 </data>
