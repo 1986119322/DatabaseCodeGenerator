@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="QuestOrigin" type="struct" >
+<data name="QuestOrigin" type="struct" alias="QuestOrigin" >
     <member name="Type" type="enum" typeid="QuestOriginType" />
     <member name="Factions" type="struct" typeid="FactionFilter" />
     <member name="MinDistance" type="int" minvalue="0" maxvalue="9999" />
