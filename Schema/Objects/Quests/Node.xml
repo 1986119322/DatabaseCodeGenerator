@@ -6,14 +6,15 @@
     <member name="Message" type="string" case="显示对话,条件,状态,随机" alias="信息" />
     <member name="DefaultTransition" type="int" case="条件,随机" minvalue="0" maxvalue="999999" alias="默认跳转节点" />
     <member name="DefaultTransition" type="int" case="撤退 摧毁星系敌人 压制星系敌人 接收物品 移除物品 交易 开始任务 
-    更改势力声望 设置势力声望 更改角色好感 设置角色好感 打开船坞 占领空间站 解放空间站 更改星区势力" minvalue="1" maxvalue="1000" alias="跳转节点" />
+    更改势力声望 设置势力声望 更改角色好感 设置角色好感 打开船坞 
+    更改星区势力 占领空间站 解放空间站" minvalue="1" maxvalue="1000" alias="跳转节点" />
     <member name="DefaultTransition" type="int" case="攻击舰队,攻击星系敌人" alias="胜利跳转" minvalue="1" maxvalue="999999" />
     <member name="FailureTransition" type="int" case="攻击舰队,攻击星系敌人" minvalue="1" maxvalue="999999" alias="失败跳转" />
     <member name="Enemy" type="object" typeid="Fleet" case="显示对话,攻击舰队" alias="敌人" />
     <member name="Loot" type="object" typeid="Loot" case="显示对话,接收物品,移除物品,交易,攻击舰队" alias="物品列表" />
     <member name="Quest" type="object" typeid="Quest" case="开始任务" alias="任务" />
     <member name="Character" type="object" typeid="Character" case="显示对话,更改角色好感,设置角色好感" alias="角色" />
-    <member name="Faction" type="object" typeid="Faction" case="打开船坞 更改星区势力" alias="势力" />
+    <member name="Faction" type="object" typeid="Faction" case="打开船坞,更改星区势力" alias="势力" />
     <member name="Value" type="int" case="更改角色好感,更改势力声望,设置角色好感,设置势力声望" minvalue="-100" maxvalue="100" alias="好感度" />
     <member name="Value" type="int" case="打开船坞" minvalue="0" maxvalue="10000" alias="船坞等级" />
     <member name="Actions" type="struct_list" typeid="NodeAction" case="显示对话" alias="按钮" />

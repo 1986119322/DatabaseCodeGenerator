@@ -6,28 +6,20 @@
 //                                                                               
 //-------------------------------------------------------------------------------
 
-namespace EditorDatabase.Enums
+namespace GameDatabase.Enums
 {
-	public enum DeviceClass
+	public enum SkillType
 	{
-		加速器,
-		诱饵,
-		能量护盾,
-		匿踪,
-		重力发生器,
-		局部护盾,
-		点防御,
-		维修机器人,
-		雷管,
-		隐形,
-		传送,
-		刹车,
-		超级隐形,
-		抗性提升,
-		毒性残骸,
-		虫尾,
-		克隆中心,
-		时间机器,
-		干扰器,
+		Undefined = 0,
+		ShipAttack = 1,
+		ShipDefense = 2,
+		StarbaseAttack = 3,
+		StarbaseDefense = 4,
+		QuickLearning = 5,
+		BetterPrices = 6,
+		BetterLoot = 7,
+		CommandPoints = 8,
+		SalvageDrones = 9,
+		Engineer = 10,
 	}
 }

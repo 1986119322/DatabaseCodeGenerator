@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data type="enum" name="SkillType">
     <item name="未定义">0</item>
-    <item name="蓝图">1</item>
-    <item name="飞船">2</item>
-    <item name="飞船伤害">4</item>
-    <item name="飞船防御">5</item>
-    <item name="空间站攻击">6</item>
-    <item name="空间站防御">7</item>
-    <item name="购买折扣">10</item>
-    <item name="掉落提升">12</item>
+    <item name="飞船攻击">1</item>
+    <item name="飞船防御">2</item>
+    <item name="空间站攻击">3</item>
+    <item name="空间站防御">4</item>
+    <item name="快速学习">5</item>
+    <item name="更便宜的价格">6</item>
+    <item name="更多的战利品">7</item>
+    <item name="命令点">8</item>
+    <item name="拾荒无人机">9</item>
+    <item name="工程师">10</item>
 </data>
