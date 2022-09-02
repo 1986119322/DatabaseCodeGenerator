@@ -69,7 +69,7 @@ namespace EditorDatabase.DataModel
 				case RequirementType.TimeSinceLastCompletion:
 					return new Requirement_TimeSinceLastCompletion();
 				default:
-					throw new DatabaseException("Requirement: 无效的内容类型 - " + type);
+					throw new DatabaseException("Requirement: Invalid content type - " + type);
 			}
 		}
 

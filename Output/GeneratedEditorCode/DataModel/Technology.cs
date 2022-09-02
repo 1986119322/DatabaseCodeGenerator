@@ -37,7 +37,7 @@ namespace EditorDatabase.DataModel
 				case TechType.Satellite:
 					return new Technology_Satellite();
 				default:
-					throw new DatabaseException("Technology: 无效的内容类型 - " + type);
+					throw new DatabaseException("Technology: Invalid content type - " + type);
 			}
 		}
 
@@ -133,7 +133,7 @@ namespace EditorDatabase.DataModel
 		{
 			Component = database.GetComponentId(serializable.ItemId);
 			if (Component.IsNull)
-			    throw new DatabaseException(this.GetType().Name + ".Component 不能为空");
+			    throw new DatabaseException(this.GetType().Name + ".Component cannot be null");
 			Faction = database.GetFactionId(serializable.Faction);
 
 			OnDataDeserialized(serializable, database);
@@ -159,7 +159,7 @@ namespace EditorDatabase.DataModel
 		{
 			Ship = database.GetShipId(serializable.ItemId);
 			if (Ship.IsNull)
-			    throw new DatabaseException(this.GetType().Name + ".Ship 不能为空");
+			    throw new DatabaseException(this.GetType().Name + ".Ship cannot be null");
 
 			OnDataDeserialized(serializable, database);
 		}
@@ -182,7 +182,7 @@ namespace EditorDatabase.DataModel
 		{
 			Satellite = database.GetSatelliteId(serializable.ItemId);
 			if (Satellite.IsNull)
-			    throw new DatabaseException(this.GetType().Name + ".Satellite 不能为空");
+			    throw new DatabaseException(this.GetType().Name + ".Satellite cannot be null");
 			Faction = database.GetFactionId(serializable.Faction);
 
 			OnDataDeserialized(serializable, database);

@@ -39,7 +39,7 @@ namespace EditorDatabase.DataModel
 				case BulletEffectType.Detonate:
 					return new BulletTriggerEmptyContent();
 				default:
-					throw new DatabaseException("BulletTrigger: 无效的内容类型 - " + type);
+					throw new DatabaseException("BulletTrigger: Invalid content type - " + type);
 			}
 		}
 
