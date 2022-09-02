@@ -10,16 +10,16 @@ namespace EditorDatabase.Enums
 {
 	public enum SkillType
 	{
-		Undefined = 0,
-		ShipAttack = 1,
-		ShipDefense = 2,
-		StarbaseAttack = 3,
-		StarbaseDefense = 4,
-		QuickLearning = 5,
-		BetterPrices = 6,
-		BetterLoot = 7,
-		CommandPoints = 8,
-		SalvageDrones = 9,
-		Engineer = 10,
+		未定义 = 0,
+		飞船攻击 = 1,
+		飞船防御 = 2,
+		空间站攻击 = 3,
+		空间站防御 = 4,
+		快速学习 = 5,
+		更便宜的价格 = 6,
+		更多的战利品 = 7,
+		命令点 = 8,
+		拾荒无人机 = 9,
+		工程师 = 10,
 	}
 }
