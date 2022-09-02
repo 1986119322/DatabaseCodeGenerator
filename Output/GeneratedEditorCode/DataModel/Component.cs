@@ -28,7 +28,7 @@ namespace EditorDatabase.DataModel
 			Availability = serializable.Availability;
 			Stats = database.GetComponentStatsId(serializable.ComponentStatsId);
 			if (Stats.IsNull)
-			    throw new DatabaseException(this.GetType().Name + ".Stats cannot be null");
+			    throw new DatabaseException(this.GetType().Name + ".Stats 不能为空");
 			Faction = database.GetFactionId(serializable.Faction);
 			Level = new NumericValue<int>(serializable.Level, 0, 1000);
 			Icon = serializable.Icon;

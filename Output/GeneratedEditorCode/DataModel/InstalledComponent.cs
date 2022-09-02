@@ -24,7 +24,7 @@ namespace EditorDatabase.DataModel
 		{
 			Component = database.GetComponentId(serializable.ComponentId);
 			if (Component.IsNull)
-			    throw new DatabaseException(this.GetType().Name + ".Component cannot be null");
+			    throw new DatabaseException(this.GetType().Name + ".Component 不能为空");
 			Modification = serializable.Modification;
 			Quality = serializable.Quality;
 			Locked = serializable.Locked;

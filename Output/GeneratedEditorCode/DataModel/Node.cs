@@ -83,7 +83,7 @@ namespace EditorDatabase.DataModel
 				case NodeType.ChangeFaction:
 					return new Node_ChangeFaction();
 				default:
-					throw new DatabaseException("Node: Invalid content type - " + type);
+					throw new DatabaseException("Node: 无效的内容类型 - " + type);
 			}
 		}
 
